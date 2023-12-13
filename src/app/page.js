@@ -4,7 +4,7 @@ import liff from '@line/liff'
 import { useState, useEffect } from 'react'
 import Loading from './components/loading'
 
-const liffId = "2002050743-DvrLLK34"
+const liffId = process.env.LIFF_ID
 
 const handleLogout = () => {
   liff.logout()
